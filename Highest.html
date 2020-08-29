@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Highest Bridges</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="assets/js/sweetalert.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main2.css" />
+    <link rel="stylesheet" href="assets/css/style1.css">
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <script src="assets/js/information.js"></script>
+    <script src="assets/js/valadationFeedback.js"></script>
+
+</head>
+
+<body>
+    <!---Navbar--->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img class="brand-icon" src="images/golden-gate-bridge-icon.png" alt="">Amazing bridge</a>
+            <button class="navbar-toggler d-lg-none" data-toggle="collapse" data-target="#collapsibleNavId"> <!---Responsive collapse button-->
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown">Galleries</a>
+                        <div class="dropdown-menu bg-dark">
+                            <a class="dropdown-item text-light bg-dark" href="Highest.html">Highest Bridges</a>
+                            <a class="dropdown-item text-light bg-dark" href="tallest.html">Tallest bridges</a>
+                            <a class="dropdown-item text-light bg-dark" href="oldest.html">Oldest Bridges</a>
+                            <a class="dropdown-item text-light bg-dark" href="longest.html">Longest Bridges</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="booking.html">Booking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ourteam.html">Our team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!---Navbar--->
+
+    <!-- Main -->
+
+    <div id="main" class="is-preload-0 is-preload-1 is-preload-2">
+
+        <!-- Header -->
+        <header id="header">
+            <h1>Highest Bridges</h1>
+            <p>Top 4 Highest Bridges in the World</p>
+            <ul class="icons">
+                <li><a href="https://facebook.com" class="icon brands fa-facebook"><span class="label">Facebook</span></a></li>
+                <li><a href="https://twitter.com" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="https://www.instagram.com" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                <li><a href="https://www.gmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
+            </ul>
+
+        </header>
+        <!-- Thumbnail -->
+        <!-- Top 1 -->
+        <section id="thumbnails">
+            <article>
+                <a class="thumbnail" href="images/highest/Full/highest.jpg" data-position="left center">
+                    <h1 class="text">1</h1><img id="thumbnail1" src="images/highest/Full/highest.jpg" alt="Duge Bridge" height="112px"></a>
+                <h2 class="title-top">Top 1. The Duge Bridge ( China <img src="images/flag/China.png" alt="Chna" width="3%"> )</h2>
+                <p class="less-cont">Deck height: 565 m (1,854 ft).</p>
+                <button id="btn1">Information</button>
+                <div id="info">
+                    <ul class="detail-info">
+                        <li>The Duge Bridge is a cable-stayed bridge on the border between the provinces of Guizhou and Yunnan.</li><br>
+                        <li>As of 2016, the bridge is the highest in the world with the road deck sitting over 565 metres (1,850 feet) above the Beipan River.</li><br>
+                        <li>The bridge cost 1.023 billion yuan (about US$140 million) to construct.</li><br>
+                        <li>Construction of the bridge began in 2011. The bridge was completed on 10 September 2016. It was inaugurated on 29 December 2016.</li><br>
+                    </ul>
+                </div>
+                <button id="btn2">Site Map</button>
+                <div id="sitemap">
+                    <div class="mapouter">
+                        <div class="gmap_canvas"><iframe width="500" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=26.3866%C2%B0N%20104.6755%C2%B0E&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+
+                        </div>
+
+                    </div>
+                </div>
+                <button id="btn3">Feedback</button>
+                <div id="feed">
+                    <form method="post" action="" onsubmit="return validateFeedback()">
+                        <textarea class="comment" rows="8" cols="3" placeholder="Enter Comment" onclick='this.value = ""' required></textarea>
+                        <button class="button-enter" value="submit">Enter</button>
+                    </form>
+                </div>
+            </article>
+            <!-- Top 2 -->
+            <article>
+                <a class="thumbnail" href="images/highest/Full/top2hig01.jpg" data-position="left center">
+                    <h1 class="text">2</h1><img id="thumbnail2" src="images/highest/Thumb/top2height01.jpg" alt="Sidu River Bridge" height="112px"></a>
+                <h2 class="title-top">Top 2. The Sidu River Bridge ( China <img src="images/flag/China.png" alt="Chna" width="3%"> )</h2>
+                <p class="less-cont">Deck height: 496 m (1,627 ft).</p>
+                <button id="btn4">Information</button>
+                <div id="info2">
+                    <ul class="detail-info">
+                        <li>The Sidu River Bridge is a 1,222 m-long (4,009 ft) suspension bridge crossing the valley of the Sidu River near Yesanguan in Badong County of the Hubei Province .</li><br>
+                        <li>The bridge spans a 500-meter-deep (1,600 ft) valley of the Sidu River, as the highest bridge in the world until it in turn was surpassed by the Duge Bridge in 2016.</li><br>
+                        <li>The bridge cost 720 million yuan (approximately US$100 million) to build.</li><br>
+                        <li>It opened to traffic on November 15, 2009.</li><br>
+                    </ul>
+                </div>
+                <button id="btn5">Site Map</button>
+                <div id="sitemap2">
+                    <div class="mapouter">
+                        <div class="gmap_canvas"><iframe width="500" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=sidu%20river%20bridge&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
+
+                    </div>
+                </div>
+                <button id="btn6">Feedback</button>
+                <div id="feed2">
+                    <form method="post" action="" onsubmit="return validateFeedback()">
+                        <textarea class="comment" rows="8" cols="3" placeholder="Enter Comment" onclick='this.value = ""' required></textarea>
+                        <button class="button-enter" value="submit">Enter</button>
+                    </form>
+                </div>
+            </article>
+            <!-- Top 3 -->
+            <article>
+                <a class="thumbnail" href="images/highest/Full/top3hig01.jpg" data-position="left center">
+                    <h1 class="text">3</h1><img id="thumbnail3" src="images/highest/Thumb/top3height01.jpg" alt="Puli Bridge" height="112px"></a>
+                <h2 class="title-top">Top 3. The Puli Bridge ( China <img src="images/flag/China.png" alt="Chna" width="3%"> )</h2>
+                <p class="less-cont">Deck height: 485 m (1,591 ft).</p>
+                <button id="btn7">Information</button>
+                <div id="info3">
+                    <ul class="detail-info">
+                        <li>Puli Bridge is a suspension bridge near Xuanwei, Qujing, China.</li><br>
+                        <li>The bridge, at 485 m (1,591 ft), is the third-highest bridge in the world.</li><br>
+                        <li>The bridge cost 440 million yuan (about US$71 million) to build.</li><br>
+                        <li>The bridge forms part of the G56 Hangzhou–Ruili Expressway between Liupanshui and Xuanwei and was opened in August 2015.</li><br>
+                    </ul>
+                </div>
+                <button id="btn8">Site Map</button>
+                <div id="sitemap3">
+                    <div class="mapouter">
+                        <div class="gmap_canvas"><iframe width="500" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=26.323114%C2%B0N%20104.586747%C2%B0E&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+
+                        </div>
+
+                    </div>
+                </div>
+                <button id="btn9">Feedback</button>
+                <div id="feed3">
+                    <form method="post" action="" onsubmit="return validateFeedback()">
+                        <textarea class="comment" rows="10" cols="20" placeholder="Enter Comment" onclick='this.value = ""' required></textarea>
+                        <button class="button-enter" value="submit">Enter</button>
+                    </form>
+                </div>
+            </article>
+            <!-- Top 4 -->
+            <article>
+                <a class="thumbnail" href="images/highest/Full/top4hig02.jpg" data-position="left center">
+                    <h1 class="text">4</h1><img id="thumbnail4" src="images/highest/Thumb/top4height02.jpg" alt="Yachi Bridge" height="112px"></a>
+                <h2 class="title-top">Top 4. The Yachi River Bridge ( China <img src="images/flag/China.png" alt="Chna" width="3%"> )</h2>
+                <p class="less-cont">Deck height: 434 m (1,424 ft).</p>
+                <button id="btn10">Information</button>
+                <div id="info4">
+                    <ul class="detail-info">
+                        <li>The Yachi River Bridge is a cable-stayed bridge and crosses the Yachi River between Qianxi County in Bijie and Qingzhen in Guiyang, China.</li><br>
+                        <li>The bridge is the fourth highest in the world. It is also one of the longest cable-stayed bridges with a main span of 800 m (2,600 ft).</li><br>
+                        <li>The western tower is 258.2 m (847 ft) placing it amongst the tallest bridges in the world. </li><br>
+                        <li>Yachi Bridge might also hold the record for the fastest construction ever for a large size cable stayed span with a total construction time of 3 years.(September 2013 - 16 July 2016)
+                        </li><br>
+
+                    </ul>
+                </div>
+                <button id="btn11">Site Map</button>
+                <div id="sitemap4">
+                    <div class="mapouter">
+                        <div class="gmap_canvas"><iframe width="500" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=yachi%20river%20bridge&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
+
+                    </div>
+                </div>
+                <button id="btn12">Feedback</button>
+                <div id="feed4">
+                    <form method="post" action="" onsubmit="return validateFeedback()">
+                        <textarea class="comment" rows="10" cols="20" placeholder="Enter Comment" onclick='this.value = ""' required></textarea>
+                        <button class="button-enter" value="submit">Enter</button>
+                    </form>
+                </div>
+            </article>
+        </section>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <ul class="copyright">
+                <li>&copy; 2020 Copyright: </li>
+                <li>Design by FPT-Aptech.</li>
+            </ul>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/information.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

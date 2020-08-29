@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Tallest Bridges</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="assets/js/sweetalert.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main2.css" />
+    <link rel="stylesheet" href="assets/css/style1.css">
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <script src="assets/js/information.js"></script>
+    <script src="assets/js/valadationFeedback.js"></script>
+
+</head>
+
+<body>
+    <!---Navbar--->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img class="brand-icon" src="images/golden-gate-bridge-icon.png" alt="">Amazing bridge</a>
+            <button class="navbar-toggler d-lg-none" data-toggle="collapse" data-target="#collapsibleNavId"> <!---Responsive collapse button-->
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown">Galleries</a>
+                        <div class="dropdown-menu bg-dark">
+                            <a class="dropdown-item text-light bg-dark" href="Highest.html">Highest Bridges</a>
+                            <a class="dropdown-item text-light bg-dark" href="tallest.html">Tallest bridges</a>
+                            <a class="dropdown-item text-light bg-dark" href="oldest.html">Oldest Bridges</a>
+                            <a class="dropdown-item text-light bg-dark" href="longest.html">Longest Bridges</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="booking.html">Booking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ourteam.html">Our team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!---Navbar--->
+
+    <!-- Main -->
+
+    <div id="main" class="is-preload-0 is-preload-1 is-preload-2">
+
+        <!-- Header -->
+        <header id="header">
+            <h1>Tallest Bridges</h1>
+            <p>Top 4 Tallest Bridges in the World</p>
+            <ul class="icons">
+                <li><a href="https://facebook.com" class="icon brands fa-facebook"><span class="label">Facebook</span></a></li>
+                <li><a href="https://twitter.com" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="https://www.instagram.com" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                <li><a href="https://www.gmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
+            </ul>
+
+        </header>
+        <!-- Thumbnail -->
+        <!-- Top 1 -->
+        <section id="thumbnails">
+            <article>
+                <a class="thumbnail" href="images/tallest/Full/tallest.jpg" data-position="left center">
+                    <h1 class="text">1</h1><img id="thumbnail1" src="images/tallest/Full/tallest.jpg" alt="Millau Viaduct" height="112px"></a>
+                <h2 class="title-top">Top 1. The Millau Viaduct ( France <img src="images/flag/France.svg" alt="France" width="3%"> )</h2>
+                <p class="less-cont">Structural height: 336.4 metres (1,104 ft).</p>
+                <button id="btn1">Information</button>
+                <div id="info">
+                    <ul class="detail-info">
+                        <li> The Millau Viaduct (French: Viaduc de Millau) is a multi-span cable-stayed bridge completed in 2004 across the gorge valley of the Tarn near Millau in Southern France. In an Anglo-French partnership, it was designed by the French
+                            structural engineer Michel Virlogeux and English architect Norman Foster.</li><br>
+                        <li>As of July 2020, it is the tallest bridge in the world, having a structural height of 336.4 metres (1,104 ft).</li><br>
+                        <li>The cost of construction was approximately € 394 million ($ 424 million).</li><br>
+                        <li>It was built over three years, formally inaugurated on 14 December 2004 and opened to traffic two days later on 16 December.</li><br>
+                        <li>The bridge has been consistently ranked as one of the greatest engineering achievements of all time, and received the 2006 Outstanding Structure Award from the International Association for Bridge and Structural Engineering.</li>
+                    </ul>
+                </div>
+                <button id="btn2">Site Map</button>
+                <div id="sitemap">
+                    <div class="mapouter">
+                        <div class="gmap_canvas"><iframe width="500" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=millau%20viaduct&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+
+                        </div>
+
+                    </div>
+                </div>
+                <button id="btn3">Feedback</button>
+                <div id="feed">
+                    <form method="post" action="" onsubmit="return validateFeedback()">
+                        <textarea class="comment" rows="8" cols="3" placeholder="Enter Comment" onclick='this.value = ""' required></textarea>
+                        <button class="button-enter" value="submit">Enter</button>
+                    </form>
+                </div>
+            </article>
+            <!-- Top 2 -->
+            <article>
+                <a class="thumbnail" href="images/tallest/Full/top2tall02.jpeg" data-position="left center">
+                    <h1 class="text">2</h1><img id="thumbnail2" src="images/tallest/Thumb/top2tall02.jpeg" alt="PingtangBridge" height="112px"></a>
+                <h2 class="title-top">Top 2. The Pingtang Bridge ( China <img src="images/flag/China.png" alt="Chna" width="3%"> )</h2>
+                <p class="less-cont">Structural height: 332 metres (1,089 ft).</p>
+                <button id="btn4">Information</button>
+                <div id="info2">
+                    <ul class="detail-info">
+                        <li>The Pingtang Bridge is a bridge in Pingtang, Guizhou, China and carries the Pingtang Luodian Expressway over the deep Caodu River valley.</li><br>
+                        <li>The bridge is a multi-span cable-stayed bridge with a length of 7,000 ft (2,100 m). With a main tower that has a height of 332 metres (1,089 ft).</li><br>
+                        <li>The bridge cost 1.5 billion yuan (about 215 million U.S. dollars) to build.</li><br>
+                        <li>It was opened to traffic on 30 December 2019.</li><br>
+                        <li>The bridge is the second tallest in world. The tallest tower is 15 metres (49 ft) shorter than France's Millau Viaduct, which has a similar structure to the Pingtang Bridge.</li>
+                    </ul>
+                </div>
+                <button id="btn5">Site Map</button>
+                <div id="sitemap2">
+                    <div class="mapouter">
+                        <div class="gmap_canvas"><iframe width="500" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=25%C2%B0%2047%E2%80%B2%209.6%E2%80%B3%20N%2C%20107%C2%B0%203%E2%80%B2%2021.6%E2%80%B3%20E&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+                                scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
+
+                    </div>
+                </div>
+                <button id="btn6">Feedback</button>
+                <div id="feed2">
+                    <form method="post" action="" onsubmit="return validateFeedback()">
+                        <textarea class="comment" rows="8" cols="3" placeholder="Enter Comment" onclick='this.value = ""' required></textarea>
+                        <button class="button-enter" value="submit">Enter</button>
+                    </form>
+                </div>
+            </article>
+            <!-- Top 3 -->
+            <article>
+                <a class="thumbnail" href="images/tallest/Full/top3tall01.jpg" data-position="left center">
+                    <h1 class="text">3</h1><img id="thumbnail3" src="images/tallest/Thumb/top3tall01.jpg" alt="HutongYangtzeRiverBridge" height="112px"></a>
+                <h2 class="title-top">Top 3. The Hutong Yangtze River Bridge ( China <img src="images/flag/China.png" alt="Chna" width="3%"> )</h2>
+                <p class="less-cont">Structural height: 325 metres (1,066 ft).</p>
+                <button id="btn7">Information</button>
+                <div id="info3">
+                    <ul class="detail-info">
+                        <li>The Hutong Yangtze River Bridge is a combined rail and road bridge which crosses the Yangtze River in Jiangsu, China.</li><br>
+                        <li>The main span is 1,092 metres (3,583 ft) long and is supported by two 330 metres (1,080 ft) tall towers. It is the eastern-most railway crossing of the Yangtze river.</li><br>
+                        <li>The ambitious traffic link, which costs 15 billion yuan (£1.7 billion) to build.</li><br>
+                        <li>Construction began on 1 March 2014. The Nantong–Shanghai railway, opened on 1 July 2020, uses this bridge.</li><br>
+                        <li>It is the third-tallest bridge in the world.</li>
+                    </ul>
+                </div>
+                <button id="btn8">Site Map</button>
+                <div id="sitemap3">
+                    <div class="mapouter">
+                        <div class="gmap_canvas"><iframe width="500" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=32%C2%B001'00.3%22N%20120%C2%B042'57.1%22E&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                        </div>
+
+                    </div>
+                </div>
+                <button id="btn9">Feedback</button>
+                <div id="feed3">
+                    <form method="post" action="" onsubmit="return validateFeedback()">
+                        <textarea class="comment" rows="10" cols="20" placeholder="Enter Comment" onclick='this.value = ""' required></textarea>
+                        <button class="button-enter" value="submit">Enter</button>
+                    </form>
+                </div>
+            </article>
+            <!-- Top 4 -->
+            <article>
+                <a class="thumbnail" href="images/tallest/Full/top4tall02.jpg" data-position="left center">
+                    <h1 class="text">4</h1><img id="thumbnail4" src="images/tallest/Thumb/top4tall02.jpg" alt="YavuzSultanSelimBridge" height="112px"></a>
+                <h2 class="title-top">Top 4. The Yavuz Sultan Selim Bridge ( Turkey <img src="images/flag/Turkey.svg" alt="turkey" width="3%"> )</h2>
+                <p class="less-cont">Structural height: 322 metres (1,056 ft).</p>
+                <button id="btn10">Information</button>
+                <div id="info4">
+                    <ul class="detail-info">
+                        <li>The Yavuz Sultan Selim Bridge (Turkish: Yavuz Sultan Selim Köprüsü) is a bridge for rail and motor vehicle transit over the Bosphorus strait, to the north of two existing suspension bridges in Istanbul, Turkey.</li><br>
+                        <li>The 58.4-metre-wide (192 ft) bridge is 2,164 m (7,100 ft) in length with a main span of 1,408 m (4,619 ft). The main span is the ninth longest suspension bridge in the world.</li><br>
+                        <li>The budgeted cost of the bridge's construction was 4.5 billion TRY (approximately US$2.5 billion as of March 2013). </li><br>
+                        <li>The foundation stone laying ceremony was held on 29 May 2013. The bridge was opened to traffic on 26 August 2016.</li><br>
+                        <li>At 322 m (1,056 ft), the bridge is one of the tallest bridges in the world. After the Millau Viaduct in France, the Pingtang Bridge and the Hutong Yangtze River Bridge in China, it is the fourth-tallest bridge in the world of any
+                            type.
+                        </li>
+
+                    </ul>
+                </div>
+                <button id="btn11">Site Map</button>
+                <div id="sitemap4">
+                    <div class="mapouter">
+                        <div class="gmap_canvas"><iframe width="500" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=The%20Yavuz%20Sultan%20Selim%20Bridge&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+
+                        </div>
+
+                    </div>
+                </div>
+                <button id="btn12">Feedback</button>
+                <div id="feed4">
+                    <form method="post" action="" onsubmit="return validateFeedback()">
+                        <textarea class="comment" rows="10" cols="20" placeholder="Enter Comment" onclick='this.value = ""' required></textarea>
+                        <button class="button-enter" value="submit">Enter</button>
+                    </form>
+                </div>
+            </article>
+        </section>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <ul class="copyright">
+                <li>&copy; 2020 Copyright: </li>
+                <li>Design by FPT-Aptech.</li>
+            </ul>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/information.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

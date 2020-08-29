@@ -1,0 +1,385 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #333;
+    color: #fff;
+    height: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+.navbar {
+    opacity: 0.8;
+}
+
+.navbar {
+    z-index: 2;
+}
+
+.dropdown-menu {
+    border-top: none;
+    border-radius: 0 0 6px 6px;
+}
+
+.navbar-brand {
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 24px;
+    margin-left: 60px;
+}
+
+.brand-icon {
+    position: absolute;
+    margin-left: -50px;
+    margin-top: -8px;
+    height: 40px;
+    width: 40px;
+}
+
+.carousel-item {
+    height: 450px;
+}
+
+.carousel-item {
+    height: 700px;
+}
+
+.carousel-image-1 {
+    background: url(images/highest/Full/highest.jpg);
+    background-size: cover;
+    background-position: 30% 45%;
+}
+
+.carousel-image-2 {
+    background: url(images/tallest/Full/tallest.jpg);
+    background-size: cover;
+    background-position: 30% 25%;
+}
+
+.carousel-image-3 {
+    background: url(images/oldest/full/top1oldest01.jpg);
+    background-size: cover;
+    background-position: 30% 45%;
+}
+
+.carousel-image-4 {
+    background: url(images/longest/full/longest.jpg);
+    background-size: cover;
+}
+
+.carousel-item:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+
+/*Contact*/
+
+.content-contact {
+    position: relative;
+    background: url(images/background/contact-us.jpg);
+    min-height: 690px;
+    background-size: cover;
+    background-position: 30% 45%;
+    height: 100%;
+}
+
+#contact .dark-overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, .3);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#contact .input,
+#contact .textarea {
+    background-color: transparent;
+    border-color: transparent;
+    border-bottom: 2px solid #ccc;
+    border-radius: 0;
+    transition: all .8s;
+    resize: none;
+    color: #fff;
+}
+
+#contact .input::placeholder {
+    color: turquoise;
+}
+
+#contact .textarea::placeholder {
+    color: turquoise;
+}
+
+#contact .input:focus,
+#contact .textarea:focus {
+    background-color: transparent;
+    border-color: transparent;
+    box-shadow: none;
+    color: #fff;
+    border-bottom: 2px solid #3292a6;
+}
+
+#contact .submit-button {
+    background-color: #3292a6;
+    ;
+    color: #eee;
+    padding: 0 80px;
+    font-size: 18px;
+    transition: all .3s;
+}
+
+#contact .submit-button:hover {
+    background-color: rgba(50, 146, 166);
+    ;
+    transform: translateY(-1.5px);
+}
+
+#contact .label {
+    color: turquoise;
+    display: block;
+    margin-top: -70px;
+    margin-left: 4px;
+    font-size: 13px;
+    transition: all .3s;
+}
+
+#contact .label-textarea {
+    color: turquoise;
+    display: block;
+    margin-top: -110px;
+    margin-left: 8px;
+    font-size: 13px;
+    transition: all .5s;
+}
+
+#contact .input:placeholder-shown+.label {
+    transform: translate(20px, 20px);
+    opacity: 0;
+    visibility: hidden;
+}
+
+#contact .textarea:placeholder-shown+.label-textarea {
+    transform: translate(20px, 30px);
+    opacity: 0;
+    visibility: hidden;
+}
+
+#contact .dot {
+    visibility: hidden;
+}
+
+
+/*Contact*/
+
+
+/*Booking*/
+
+#booking label.error {
+    color: #dc3545;
+    font-size: .8em;
+    margin: 0;
+}
+
+#booking input.error:focus {
+    border-color: none;
+}
+
+#booking input.error,
+#booking select.error {
+    border-color: #dc3545;
+}
+
+#booking {
+    padding: 40px 0 80px 0;
+    background: url(images/background/airplane.png) no-repeat;
+    background-size: cover;
+    background-position: 50% 60%;
+}
+
+#booking .slogan .banner {
+    position: absolute;
+    top: 43%;
+    right: 5%;
+}
+
+#booking .slogan .banner .banner-heading {
+    animation: header 2s;
+}
+
+#booking .slogan .banner .banner-par {
+    animation: header 2s;
+    animation-delay: .5s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes header {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+
+/*Booking*/
+
+
+/*Our team*/
+
+.content-team {
+    background: url(images/background/team.jpg);
+    background-size: cover;
+    position: relative;
+    min-height: 690px;
+}
+
+#team .dark-overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, .3);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#team .btn-primary {
+    background-color: #007b5e;
+}
+
+#team .btn-primary:hover,
+#team .btn-primary:focus {
+    background-color: #108d6f;
+    border-color: #108d6f;
+    box-shadow: none;
+    outline: none;
+}
+
+#team .card {
+    border: none;
+    background: #ffffff;
+}
+
+.image-flip:hover .backside,
+.image-flip.hover .backside {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    border-radius: .25rem;
+}
+
+.image-flip:hover .frontside,
+.image-flip.hover .frontside {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.mainflip {
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -moz-transition: 1s;
+    -moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.frontside {
+    position: relative;
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    z-index: 2;
+    margin-bottom: 30px;
+}
+
+.backside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+}
+
+.frontside,
+.backside {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 1s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 1s;
+    -o-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+.frontside .card,
+.backside .card {
+    min-height: 310px;
+}
+
+.frontside .card .card-title,
+.backside .card .card-title {
+    color: #007b5e !important;
+}
+
+.frontside .card .card-body img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+
+#team i:hover {
+    color: turquoise;
+    cursor: pointer;
+}
+
+
+/*Our team*/
+
+
+/*Reponsive for team*/
+
+@media only screen and (max-width: 767px) {
+    #team {
+        height: 1550px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    #team {
+        height: 850px;
+    }
+}

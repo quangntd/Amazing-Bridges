@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Booking</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <!--Logo font-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body style="overflow-x: hidden;">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img class="brand-icon" src="images/golden-gate-bridge-icon.png" alt="">Amazing bridge</a>
+            <button class="navbar-toggler d-lg-none" data-toggle="collapse" data-target="#collapsibleNavId"> <!---Responsive collapse button-->
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown">Galleries</a>
+                        <div class="dropdown-menu bg-dark">
+                            <a class="dropdown-item text-light bg-dark" href="Highest.html">Highest Bridges</a>
+                            <a class="dropdown-item text-light bg-dark" href="tallest.html">Tallest bridges</a>
+                            <a class="dropdown-item text-light bg-dark" href="oldest.html">Oldest Bridges</a>
+                            <a class="dropdown-item text-light bg-dark" href="longest.html">Longest Bridges</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="booking.html" data-toggle="modal" data-target="#signupModal">Booking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ourteam.html">Our team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!---Navbar--->
+    <section id="booking">
+        <div class="container">
+            <h1 class="display-4 text-center mb-5">Booking Form</h1>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card p-3">
+                        <form id="registration" class="bg-light">
+                            <div class="form-row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control pl-3" name="name" placeholder="Name">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="email" class="form-control pl-3" placeholder="Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="telephone" class="form-control pl-3" placeholder="Telephone Number">
+                                    </div>
+                                    <div class="form-group">
+                                        <select id="country" name="location" class="form-control">
+                                                <option disabled selected value="">Your loccation</option>
+                                                <option value="china">China</option>
+                                                <option value="france">France</option>
+                                                <option value="indonesia">Indonesia</option>
+                                                <option value="italia">Italia</option>
+                                                <option value="spain">Spain</option>
+                                                <option value="turkey">Turkey</option>
+                                                <option value="usa">USA</option>
+                                            </select>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <select name="traffic" class="form-control">
+                                                <option disabled selected value="">Your traffic type</option>
+                                                <option value="airplane">Airplane</option>
+                                                <option value="bus">Bus</option>
+                                            </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <input style="cursor: context-menu" id="departure" name="departure" placeholder="Departure Date" class="date-picker form-control pl-3" type="text">
+                                    </div>
+                                    <div class="form-group">
+                                        <input style="cursor: context-menu" id="arrival" name="arrival" placeholder="Arrival Date" class="date-picker form-control pl-3" type="text">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="ticket" class="form-control pl-3" placeholder="Ticket">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-end">
+                                <button id="booknow" type="submit" class="btn btn-primary btn-lg">Book Now</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                </div>
+            </div>
+        </div>
+        <div class="slogan">
+            <div class="text-right text-light banner">
+                <h3 class="display-4 banner-heading text-success">Amazing Bridge </h3>
+                <p class="lead banner-par text-success">Beauty, Charm, And Adventure</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div id="video-play">
+        <div class="row">
+            <div class="col">
+                <div class="container p-5 text-center">
+                    <a href="#" class="video text-white" data-video="https://www.youtube.com/embed/FuWM6-xOQCY" data-toggle="modal" data-target="#videoModal">
+                        <i class="fa fa-play fa-3x"></i>
+                    </a>
+                    <h1>Visit the World's Longest Bridges</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!---Modal-->
+    <div class="modal fade" id="videoModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button class="close" data-dismiss="modal">
+            <span>&times;</span>
+            </button>
+                    <iframe src="" frameborder="0" height="350" width="100%" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---Modal-->
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js" integrity="sha512-UdIMMlVx0HEynClOIFSyOrPggomfhBKJE28LKl8yR3ghkgugPnG6iLfRfHwushZl1MOPSY6TsuBDGPK2X4zYKg==" crossorigin="anonymous"></script>
+    <script src="assets/js/booking.js"></script>
+    <script src="assets/js/sweetalert.min.js"></script>
+    <script>
+    </script>
+</body>
+
+</html>

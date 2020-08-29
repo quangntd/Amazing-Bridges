@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Contact Us</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <!--Logo font-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function kiemtra() {
+            var use = frm.name.value;
+            var ema = frm.email.value;
+            var com = frm.comment.value;
+            if (use.length == 0) {
+                alert("Username must be entered");
+                return false;
+            }
+            if (ema.length == 0) {
+                alert("Email must be entered");
+                return false;
+            }
+            if (com.length <= 20) {
+                alert("Comment must be above 20 characters");
+                return false;
+            }
+
+            var emailP = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            if (!ema.match(emailP)) {
+                alert("Email is not valid");
+                return false;
+            }
+
+            return validateFeedback()
+        }
+
+        function validateFeedback() {
+            swal({
+                title: "Thank you!",
+                text: "Your message has been sent!",
+                icon: "success",
+                button: "Close",
+            });
+            return false;
+        }
+    </script>
+</head>
+
+<body>
+
+    <!---Navbar--->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img class="brand-icon" src="images/golden-gate-bridge-icon.png" alt="">Amazing bridge</a>
+            <button class="navbar-toggler d-lg-none" data-toggle="collapse" data-target="#collapsibleNavId"> <!---Responsive collapse button-->
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown">Galleries</a>
+                        <div class="dropdown-menu bg-dark">
+                            <a class="dropdown-item text-light bg-dark" href="Highest.html">Highest Bridges</a>
+                            <a class="dropdown-item text-light bg-dark" href="tallest.html">Tallest bridges</a>
+                            <a class="dropdown-item text-light bg-dark" href="oldest.html">Oldest Bridges</a>
+                            <a class="dropdown-item text-light bg-dark" href="longest.html">Longest Bridges</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="booking.html">Booking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ourteam.html">Our team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!---Navbar--->
+    <!--Contact-->
+    <div class="content-contact">
+        <section id="contact" class=" text-light py-5">
+            <div class="dark-overlay py-4">
+                <div class="container">
+                    <h1 class="display-4 text-center mb-5">Contact Us
+                        <div class="underline"></div>
+                    </h1>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <form class="contact-form" name="frm" action="#" onsubmit="return kiemtra();">
+                                <div class="form-group py-4">
+                                    <input type="text" name="name" class="form-control my-2 p-2 input" placeholder="Name">
+                                    <label for="name" class="label">Name</label>
+                                </div>
+                                <div class="form-group py-4">
+                                    <input type="email" name="email" class="form-control my-2 p-2 input" placeholder="Email Address">
+                                    <label for="email" class="label">Email Address</label>
+                                </div>
+                                <div class="form-group py-4 mb-5">
+                                    <textarea cols="75" rows="3" name="comment" placeholder="Comment" maxlength="120" class="form-control textarea"></textarea>
+                                    <label for="comment" class="label-textarea">Comment</label>
+                                </div>
+                                <p class="dot mb-3">.</p>
+                                <div class="d-flex">
+                                    <button type="submit" class="ml-auto btn btn-lg py-2 mb-3 submit-button">Send Message</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-lg-6 ">
+                            <div class="card">
+                                <div class="card-body p-1">
+                                    <iframe height="345" width="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=590%20c%C3%A1ch%20m%E1%BA%A1ng%20th%C3%A1ng%20t%C3%A1m%20&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                                    <a href="https://www.whatismyip-address.com/nordvpn-coupon/"></a>
+                                    <style>
+                                        .mapouter {
+                                            position: relative;
+                                            text-align: right;
+                                            height: 360px;
+                                            width: 600px;
+                                        }
+                                        
+                                        .gmap_canvas {
+                                            overflow: hidden;
+                                            background: none!important;
+                                            height: 360px;
+                                            width: 600px;
+                                        }
+                                    </style>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!--Contact-->
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="assets/js/sweetalert.min.js"></script>
+</body>
+
+</html>

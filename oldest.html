@@ -1,0 +1,222 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Oldest Bridges</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="assets/js/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main2.css" />
+    <link rel="stylesheet" href="assets/css/style1.css">
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+    <script src="assets/js/information.js"></script>
+    <script src="assets/js/valadationFeedback.js"></script>
+
+</head>
+
+<body>
+    <!---Navbar--->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img class="brand-icon" src="images/golden-gate-bridge-icon.png" alt="">Amazing bridge</a>
+            <button class="navbar-toggler d-lg-none" data-toggle="collapse" data-target="#collapsibleNavId"> <!---Responsive collapse button-->
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown">Galleries</a>
+                        <div class="dropdown-menu bg-dark">
+                            <a class="dropdown-item text-light bg-dark" href="Highest.html">Highest Bridges</a>
+                            <a class="dropdown-item text-light bg-dark" href="tallest.html">Tallest bridges</a>
+                            <a class="dropdown-item text-light bg-dark" href="oldest.html">Oldest Bridges</a>
+                            <a class="dropdown-item text-light bg-dark" href="longest.html">Longest Bridges</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="booking.html">Booking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ourteam.html">Our team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!---Navbar--->
+    <!-- Main -->
+    <div id="main" class="is-preload-0 is-preload-1 is-preload-2">
+        <!-- Header -->
+        <header id="header">
+            <h1>Oldest Bridges</h1>
+            <p>Top 4 Oldest Bridges in the World </p>
+
+            <ul class="icons">
+                <li><a href="https://facebook.com" class="icon brands fa-facebook"><span class="label">Facebook</span></a></li>
+                <li><a href="https://twitter.com" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="https://www.instagram.com" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                <li><a href="https://www.gmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
+            </ul>
+        </header>
+        <!-- Thumbnail -->
+        <!-- Top 1 -->
+        <section id="thumbnails">
+            <article>
+                <a class="thumbnail" href="images/oldest/full/top1oldest01.jpg" data-position="left center">
+                    <h1 class="text">1</h1><img id="thumbnail1" src="images/oldest/thumb/top1oldest01.jpg" alt="Pont du Gard" height="112px"></a>
+                <h2 class="title-top">Top 1. The Pont du Gard Bridge (France<img src="images/flag/France.svg" alt="Fran" width="3%"> )</h2>
+                <p class="less-cont">Created 2000 years ago</p>
+                <button id="btn1">Information</button>
+                <div id="info">
+                    <ul class="detail-info">
+                        <li> It is not difficult to see why Pont du Gard is one of the world’s most-visited bridges. Created 2000 years ago to span the Gardon River, it is a truly unique sight to behold.</li><br>
+                        <li>Constructed with stones each weighing up to six tons and assembled in a breathtaking three-tiered fashion, it is a remarkable 902-foot long architectural marvel. It is impossible to experience this prodigious bridge without feeling
+                            awestruck by its ambitious and lasting design.</li>
+
+                    </ul>
+                </div>
+                <button id="btn2">Site Map</button>
+                <div id="sitemap">
+                    <div class="mapouter">
+                        <div class="gmap_canvas">
+                            <iframe width="500" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=Pont%20du%20Gard&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0 " scrolling="no " marginheight="0 " marginwidth="0 "></iframe></div>
+                    </div>
+                </div>
+                <button id="btn3">Feedback</button>
+                <div id="feed">
+                    <form method="post" action="" onsubmit="return validateFeedback()">
+                        <textarea class="comment" rows="10" cols="20" placeholder="Enter Comment" onclick='this.value = ""' required></textarea>
+                        <button class="button-enter" value="submit">Enter</button>
+                    </form>
+                </div>
+            </article>
+            <!-- Top 2 -->
+            <article>
+                <a class="thumbnail" href="images/oldest/full/top2oldest01.jpg" data-position="left center">
+                    <h1 class="text">2</h1><img id="thumbnail2" src="images/oldest/thumb/top2oldest01.jpg" alt="Alcántara Bridge" height="112px"></a>
+                <h2 class="title-top">Top 2. The Alcántara Bridge (Spain <img src="images/flag/Flag_of_Spain.svg" alt="Spain" width="3%"> )</h2>
+                <p class="less-cont">Completed in 106 A.D</p>
+                <button id="btn4">Information</button>
+                <div id="info2">
+                    <ul class="detail-info">
+                        <li>Not many bridges contain predictions etched into their design, but this incredible structure crossing the Tagus River certainly does. A marble plaque at its center reads "I have built a bridge that will last forever," and it has
+                            so far been proven completely correct.</li><br>
+                        <li>Completed in 106 A.D. and reaching a total of 630 feet, Alcantara has played its role in history admirably and still stands as a testament to the past. Through the centuries, wars and skirmishes have damaged or taken chunks out
+                            of the bridge, but it still stays true to those words carved into its very foundations.</li>
+
+                    </ul>
+                </div>
+                <button id="btn5">Site Map</button>
+                <div id="sitemap2">
+                    <div class="mapouter">
+                        <div class="gmap_canvas"><iframe width="500" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=Alcantara%20Bridge%2C%20Spain&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
+                    </div>
+                </div>
+                <button id="btn6">Feedback</button>
+                <div id="feed2">
+                    <form method="post" action="" onsubmit="return validateFeedback()">
+                        <textarea class="comment" rows="10" cols="20" placeholder="Enter Comment" onclick='this.value = ""' required></textarea>
+                        <button class="button-enter" value="submit">Enter</button>
+                    </form>
+                </div>
+            </article>
+            <!-- Top 3 -->
+            <article>
+                <a class="thumbnail" href="images/oldest/full/top3oldest01.jpg" data-position="left center">
+                    <h1 class="text">3</h1><img id="thumbnail3" src="images/oldest/thumb/top3oldest01.jpg" alt="Pons Fabricius, Italy" height="112px"></a>
+                <h2 class="title-top">Top 3. The Pons Fabricius (Italy <img src="images/flag/225px-Flag_of_Italy.svg.png" alt="Italy" width="3%"> )</h2>
+                <p class="less-cont">Was built in 62 B.C</p>
+                <button id="btn7">Information</button>
+                <div id="info3">
+                    <ul class="detail-info">
+                        <li>The oldest bridge still in use within Rome, the Pons Fabricius was built in 62 B.C. and stretches just over 200 feet in length. The ancient Romans were prolific when it came to constructing bridges, so this remarkable structure
+                            is the oldest of a particularly old and impressive bunch.</li><br>
+                        <li>A pedestrian bridge that is not only still standing but welcoming travelers. It is possible to stroll over this piece of history, and it shows no signs of abandoning its task any time soon.</li>
+
+                    </ul>
+                </div>
+                <button id="btn8">Site Map</button>
+                <div id="sitemap3">
+                    <div class="mapouter">
+                        <div class="gmap_canvas"><iframe width="500" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=Pons%20Fabricius%2C%20Italy&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <button id="btn9">Feedback</button>
+                <div id="feed3">
+                    <form method="post" action="" onsubmit="return validateFeedback()">
+                        <textarea class="comment" rows="10" cols="20" placeholder="Enter Comment" onclick='this.value = ""' required></textarea>
+                        <button class="button-enter" value="submit">Enter</button>
+                    </form>
+                </div>
+            </article>
+            <!-- Top 4 -->
+            <article>
+                <a class="thumbnail" href="images/oldest/full/top4oldest01.jpg" data-position="left center">
+                    <h1 class="text">4</h1><img id="thumbnail4" src="images/oldest/thumb/top4oldest01.jpg" alt="Anji Bridge" height="112px"></a>
+                <h2 class="title-top">Top 4. The Anji Bridge (China <img src="images/flag/China.png" alt="Chna" width="3%"> )</h2>
+                <p class="less-cont">Was built from 595 to 605 AD</p>
+                <button id="btn10">Information</button>
+                <div id="info4">
+                    <ul class="detail-info">
+                        <li>The Anji Bridge (simplified Chinese: 安济桥; traditional Chinese: 安濟橋; pinyin: Ānjì Qiáo; lit.: 'Safe crossing bridge') is the world's oldest open-spandrel segmental arch bridge of stone construction. Credited to the design of a craftsman
+                            named Li Chun, the bridge was constructed in the years 595-605 during the Sui dynasty (581–618). Located in the southern part of Hebei Province, it is the oldest standing bridge in China.</li><br>
+                        <li>The bridge is also commonly known as the Zhaozhou Bridge (simplified Chinese: 赵州桥; traditional Chinese: 趙州橋; pinyin: Zhàozhōu Qiáo), after Zhao County, which was formerly known as Zhaozhou (趙州). Another name for the bridge is the
+                            Great Stone Bridge (simplified Chinese: 大石桥; traditional Chinese: 大石橋; pinyin: Dàshí Qiáo). It crosses the Xiaohe River (洨河) south of the town of Zhaoxian, in Zhao County, approximately 52 kilometres (32 mi) southeast of the
+                            provincial capital Shijiazhuang. It is a pedestrian bridge and is currently open to the public. In English literature, it is also referred as Chiao Shui Bridge, after the river it crosses.</li>
+                    </ul>
+                </div>
+                <button id="btn11">Site Map</button>
+                <div id="sitemap4">
+                    <div class="mapouter">
+                        <div class="gmap_canvas"><iframe width="500" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=Anji%20Bridge&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+
+                        </div>
+                    </div>
+                </div>
+                <button id="btn12">Feedback</button>
+                <div id="feed4">
+                    <form method="post" action="" onsubmit="return validateFeedback()">
+                        <textarea class="comment" rows="10" cols="20" placeholder="Enter Comment" onclick='this.value = ""' required></textarea>
+                        <button class="button-enter" value="submit">Enter</button>
+                    </form>
+                </div>
+            </article>
+
+
+        </section>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <ul class="copyright">
+                <li>&copy; Untitled.</li>
+                <li>Design by FPT-Aptech.</li>
+            </ul>
+        </footer>
+    </div>
+    <!-- Scripts -->
+    <script src="assets/js/information.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

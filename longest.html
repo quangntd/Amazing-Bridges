@@ -1,0 +1,230 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Longest Bridges</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="assets/js/sweetalert.min.js"></script>
+
+
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="assets/js/information.js"></script>
+    <script src="assets/js/valadationFeedback.js"></script>
+    <link rel="stylesheet" href="assets/css/style1.css">
+    <link rel="stylesheet" href="assets/css/main2.css" />
+
+</head>
+
+<body>
+    <!---Navbar--->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img class="brand-icon" src="images/golden-gate-bridge-icon.png" alt="">Amazing bridge</a>
+            <button class="navbar-toggler d-lg-none" data-toggle="collapse" data-target="#collapsibleNavId"> <!---Responsive collapse button-->
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown">Galleries</a>
+                        <div class="dropdown-menu bg-dark">
+                            <a class="dropdown-item text-light bg-dark" href="Highest.html">Highest Bridges</a>
+                            <a class="dropdown-item text-light bg-dark" href="tallest.html">Tallest bridges</a>
+                            <a class="dropdown-item text-light bg-dark" href="oldest.html">Oldest Bridges</a>
+                            <a class="dropdown-item text-light bg-dark" href="longest.html">Longest Bridges</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="booking.html">Booking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ourteam.html">Our team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!---Navbar--->
+    <!-- Main -->
+    <div id="main" class="is-preload-0 is-preload-1 is-preload-2">
+        <!-- Header -->
+        <header id="header">
+            <h1>Longest Bridges</h1>
+            <p>Top 4 Longest Bridges in the World</p>
+
+            <ul class="icons">
+                <li><a href="https://facebook.com" class="icon brands fa-facebook"><span class="label">Facebook</span></a></li>
+                <li><a href="https://twitter.com" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="https://www.instagram.com" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                <li><a href="https://www.gmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
+            </ul>
+        </header>
+        <!-- Thumbnail -->
+        <!-- Top 1 -->
+        <section id="thumbnails">
+            <article>
+                <a class="thumbnail" href="images/longest/full/longest.jpg" data-position="left center">
+                    <h1 class="text">1</h1><img id="thumbnail1" src="images/longest/full/longest.jpg" alt="Danyang-Kunshan" height="112px"></a>
+                <h2 class="title-top">Top 1. The Danyang–Kunshan Grand Bridge (China<img src="images/flag/China.png" alt="Chna" width="3%"> )</h2>
+                <p class="less-cont">Structural length: 164.8 kilometres (102.4 mi)</p>
+                <button id="btn1">Information</button>
+                <div id="info">
+                    <ul class="detail-info">
+                        <li>The bridge is located on the rail line between Shanghai and Nanjing in Jiangsu province.</li><br>
+                        <li>It is in the Yangtze River Delta where the geography is characterised by lowland rice paddies, canals, rivers, and lakes.</li><br>
+                        <li>The bridge runs roughly parallel to the Yangtze River, about 8 to 80 km (5 to 50 mi) south of the river. </li><br>
+                        <li>It passes through the northern edges of population centers (from west to east) beginning in Danyang, Changzhou, Wuxi, Suzhou, and ending in Kunshan.</li><br>
+                        <li>There is a 9-kilometre long (5.6 mi) section over open water across Yangcheng Lake in Suzhou.</li><br/>
+                        <li>It was completed in 2010 and opened in 2011. Employing 10,000 people, construction took four years and cost about $8.5 billion. The Danyang–Kunshan Grand Bridge currently holds the Guinness World Record for the longest bridge in
+                            the world in any category as of June 2011.</li>
+                    </ul>
+                </div>
+                <button id="btn2">Site Map</button>
+                <div id="sitemap">
+                    <div class="mapouter">
+                        <div class="gmap_canvas">
+                            <iframe width="500" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=The%20Danyang%E2%80%93Kunshan%20Grand%20Bridge_China&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0 " scrolling="no " marginheight="0 " marginwidth="0 "></iframe></div>
+                    </div>
+                </div>
+                <button id="btn3">Feedback</button>
+                <div id="feed">
+                    <form method="post" action="" onsubmit="return validateFeedback()">
+                        <textarea class="comment" rows="10" cols="20" placeholder="Enter Comment" onclick='this.value = ""' required></textarea>
+                        <button class="button-enter" value="submit">Enter</button>
+                    </form>
+                </div>
+            </article>
+            <!-- Top 2 -->
+            <article>
+                <a class="thumbnail" href="images/longest/full/top2longest01.jpg" data-position="left center">
+                    <h1 class="text">2</h1><img id="thumbnail2" src="images/longest/thumb/top2longest01.jpg" alt="Jakarta–Cikampek Elevated Toll Road" height="112px"></a>
+                <h2 class="title-top">Top 2. The Jakarta–Cikampek Elevated Toll Road ( Indonesia <img src="images/flag/278px-Flag_of_Indonesia.svg.png" alt="Indo" width="3%"> )</h2>
+                <p class="less-cont">Structural lenght: 36.4-kilometre-long (22.6 mi)</p>
+                <button id="btn4">Information</button>
+                <div id="info2">
+                    <ul class="detail-info">
+                        <li>Jakarta–Cikampek Elevated Toll Road is a 36.4-kilometre-long (22.6 mi) elevated expressway that extends from Cikunir, Bekasi, to Karawang in West Java, Indonesia.</li><br>
+                        <li>It passes over some sections of the existing Jakarta–Cikampek Toll Road.</li><br>
+                        <li>It is the longest flyover in Indonesia, and the longest elevated double decker expressways in Southeast Asia.</li><br>
+                        <li>The toll road was opened by President Joko Widodo on 11 December 2019.</li><br>
+                        <li>The elevated toll road is designed to be for private vehicles only. It is built to ease traffic congestion within Greater Jakarta area as well as to reduce the burden on the existing Jakarta–Cikampek toll road.</li>
+                    </ul>
+                </div>
+                <button id="btn5">Site Map</button>
+                <div id="sitemap2">
+                    <div class="mapouter">
+                        <div class="gmap_canvas"><iframe width="500" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=Jakarta%E2%80%93Cikampek%20Elevated%20Toll%20Road&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
+                    </div>
+                </div>
+                <button id="btn6">Feedback</button>
+                <div id="feed2">
+                    <form method="post" action="" onsubmit="return validateFeedback()">
+                        <textarea class="comment" rows="10" cols="20" placeholder="Enter Comment" onclick='this.value = ""' required></textarea>
+                        <button class="button-enter" value="submit">Enter</button>
+                    </form>
+                </div>
+            </article>
+            <!-- Top 3 -->
+            <article>
+                <a class="thumbnail" href="images/longest/full/top3longest01.png" data-position="left center">
+                    <h1 class="text">3</h1><img id="thumbnail3" src="images/longest/thumb/top3longest01.png" alt="Lake Pontchartrain Causeway" height="112px"></a>
+                <h2 class="title-top">Top 3. The Lake Pontchartrain Causeway ( USA <img src="images/flag/Flag_of_the_United_States.svg" alt="USA" width="3%"> )</h2>
+                <p class="less-cont">Structural length: 38.442 km (15 ft)</p>
+                <button id="btn7">Information</button>
+                <div id="info3">
+                    <ul class="detail-info">
+                        <li>The Lake Pontchartrain Causeway, sometimes only the causeway, is a fixed link composed of two parallel bridges crossing Lake Pontchartrain in southern Louisiana, United States.</li><br>
+                        <li>The longer of the two bridges is 23.83 miles (38.35 km) long. The southern terminus of the causeway is in Metairie, Louisiana, a suburb of New Orleans. The northern terminus is at Mandeville, Louisiana.</li><br>
+                        <li>Since 1969, it was listed by Guinness World Records as the longest bridge over water in the world; in 2011, in response to the opening of the longer Jiaozhou Bay Bridge in China, Guinness World Records created two categories for
+                            bridges over water: continuous and aggregate lengths over water. Lake Pontchartrain Causeway then became the longest bridge over water (continuous) while Jiaozhou Bay Bridge the longest bridge over water (aggregate).</li><br>
+                        <li>The bridges are supported by 9,500 concrete pilings. The two bridges feature a bascule, which spans the navigation channel 8 miles (13 km) south of the north shore.</li>
+                    </ul>
+                </div>
+                <button id="btn8">Site Map</button>
+                <div id="sitemap3">
+                    <div class="mapouter">
+                        <div class="gmap_canvas"><iframe width="500" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=The%20Lake%20Pontchartrain%20Causeway&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <button id="btn9">Feedback</button>
+                <div id="feed3">
+                    <form method="post" action="" onsubmit="return validateFeedback()">
+                        <textarea class="comment" rows="10" cols="20" placeholder="Enter Comment" onclick='this.value = ""' required></textarea>
+                        <button class="button-enter" value="submit">Enter</button>
+                    </form>
+                </div>
+            </article>
+            <!-- Top 4 -->
+            <article>
+                <a class="thumbnail" href="images/longest/full/top4longest01.jpg" data-position="left center">
+                    <h1 class="text">4</h1><img id="thumbnail4" src="images/longest/thumb/top4longest01.jpg" alt="Jiaozhou Bay Bridge" height="112px"></a>
+                <h2 class="title-top">Top 4. The Jiaozhou Bay Bridge (China <img src="images/flag/China.png" alt="Chna" width="3%"> )</h2>
+                <p class="less-cont">Structural length: 26.7 km (16.6 mi).</p>
+                <button id="btn10">Information</button>
+                <div id="info4">
+                    <ul class="detail-info">
+                        <li>Jiaozhou Bay Bridge (or Qingdao Haiwan Bridge) is a 26.7 km (16.6 mi) long roadway bridge in eastern China's Shandong province, which is part of the 41.58 km (25.84 mi) Jiaozhou Bay Connection Project. The longest continuous segment
+                            of the bridge is 25.9 km (16.1 mi), making it one of the longest bridges in the world.</li><br>
+                        <li>The Jiaozhou Bay Bridge transects Jiaozhou Bay, which reduces the road distance between Qingdao and Huangdao by 30 km (19 mi), compared with the expressway along the coast of the bay, reducing travel time by 20 to 30 minutes. The
+                            design of the bridge is T-shaped with the main entry and exit points in Huangdao and the Licang District of Qingdao. A branch to Hongdao Island is connected by a semi-directional T interchange to the main span.</li><br>
+                        <li>The construction used 450,000 tons of steel and 2.3 million cubic metres (81×106 cu ft) of concrete. The bridge is designed to be able to withstand severe earthquakes, typhoons, and collisions from ships. It is supported by 5,238
+                            concrete piles. The cross section consists of two beams in total 35 m (115 ft) wide carrying six lanes with two shoulders.</li><br>
+                        <li>The Jiaozhou Bay Bridge has three navigable sections: the Cangkou Channel Bridge to the west, the Dagu Channel Bridge to the east, and the Hongdao Channel Bridge to the north. The 600 metres (2,000 ft) long Cangkou Channel Bridge
+                            has the largest span of the entire Jiaozhou Bay Bridge, 260 m (850 ft). The Hongdao Channel Bridge has a span of 120 m (390 ft). The non-navigable sections of the bridge have a span of 60 m (200 ft).</li>
+                    </ul>
+                </div>
+                <button id="btn11">Site Map</button>
+                <div id="sitemap4">
+                    <div class="mapouter">
+                        <div class="gmap_canvas"><iframe width="500" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=Jiaozhou%20Bay%20Bridge&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+
+                        </div>
+                    </div>
+                </div>
+                <button id="btn12">Feedback</button>
+                <div id="feed4">
+                    <form method="post" action="" onsubmit="return validateFeedback()">
+                        <textarea class="comment" rows="10" cols="20" placeholder="Enter Comment" onclick='this.value = ""' required></textarea>
+                        <button class="button-enter" value="submit">Enter</button>
+                    </form>
+                </div>
+            </article>
+
+
+        </section>
+
+
+        <!-- Footer -->
+        <footer id="footer">
+            <ul class="copyright">
+                <li>&copy; Untitled.</li>
+                <li>Design by FPT-Aptech.</li>
+            </ul>
+        </footer>
+    </div>
+    <!-- Scripts -->
+    <script src="assets/js/information.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
