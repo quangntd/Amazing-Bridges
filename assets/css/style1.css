@@ -1,0 +1,31 @@
+.navbar {
+    z-index: 6;
+}
+
+.dropdown-menu {
+    border-top: none;
+    border-radius: 0 0 6px 6px;
+}
+
+.navbar-brand {
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 24px;
+    margin-left: 60px;
+}
+
+.brand-icon {
+    margin-top: -8px;
+    height: 40px;
+    width: 40px;
+}
+
+.dropdown-menu {
+    border-top: none;
+    border-radius: 0 0 6px 6px;
+}
+
+#signupModal .modal-content {
+    background: url(images/airplane.png);
+    background-size: cover;
+    background-position: -100px 0px;
+}
